@@ -8,43 +8,76 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
    
     <style>
-        input{
-            width: 100%;
-        }
-        table,
-        th,
-        td {
+       
+        .task3 table,th {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 5px;
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-       th{
+        
+        .task3 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .task3 th{
            background-color: #007BFF;
            color: #fff;
        }
-       tr:nth-child(odd){
+       .task3 tr:nth-child(odd){
            background-color: #f2f2f2;
+         
        }
+       input{
+        width: 100%;
+        border: 1.5px solid black;
+        border-radius: 5px;
+        box-sizing: content-box;
+        padding: 3px;
+       
+        
+    }
+       .registration {
+           background-color: lightblue;
+           display: flex;
+           justify-content: center;
+           padding: 10px;
+           
+       }
+       .registration table,td {
+         text-align: center;
+        border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+
+    }
+    
     </style>
 </head>
 <body>
     <section>
+       
     <div class="registration">
-        <h2>Registration form</h2>
+       
+        
         <table>
             <tr>
                 <td>
-                    <label name="FirstName">First Name</label>
+                    <label name="First Name">First Name:</label>
                 </td>
                 <td>
+                   
                     <input name="FirstName" type="text" placeholder="First Name">
                 </td>
             </tr>
+      
+            
             <tr>
                 <td>
-                    <label name="LastName">Last Name</label>
+                    <label name="LastName">Last Name:</label>
                 </td>
                 <td>
                     <input name="LastName" type="text" placeholder="Last Name">
@@ -52,7 +85,7 @@
             </tr>
             <tr>
                 <td>
-                    <label name="EmaiAddress">Email Address</label>
+                    <label name="EmaiAddress">Email Address:</label>
                 </td>
                 <td>
                     <input name="EmailAddress" type="text" placeholder="abc@xyz.com">
@@ -67,10 +100,11 @@
                 </td>
             </tr>
         </table>
+    
     </div>
 </section>
 <div>&nbsp;</div>
-    <section>
+    <section class="task3">
 <table style="width:100%">
     <tr>
         <th>Name</th>
