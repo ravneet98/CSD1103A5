@@ -24,6 +24,13 @@
             text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
+        .image{
+        border-radius: 50%;
+        max-width: 8%;
+        height: 10%;
+        transition: all 0.3s ease;
+       }
        .task3 th{
            background-color: #007BFF;
            color: #fff;
@@ -32,6 +39,12 @@
            background-color: #f2f2f2;
          
        }
+       .task3 table tr:hover{
+        background-color:#FFC107;
+       }
+
+      
+
        input{
         width: 100%;
         border: 1.5px solid black;
@@ -114,22 +127,22 @@
     <tr>
         <td>Peter Parker</td>
         <td>Code Name: Spiderman</td>
-        <td></td>
+        <td ><img class="image" src="./Images/spiderman2.jpg"></td>
     </tr>
     <tr>
-        <td>Tony Stark</td>
+        <td>Tony Stark</td> 
         <td>Code Name: Ironman</td>
-        <td></td>
+        <td><img class="image" src="./Images/Ironman1.jpg"></td>
     </tr>
     <tr>
         <td>Bruce Banner</td>
         <td>Code Name: Hulk</td>
-        <td></td>
+        <td><img class="image" src="./Images/hulk1.jpg"></td>
     </tr>
     <tr>
         <td>Steve Rogers</td>
         <td>Code Name: Captain America</td>
-        <td></td>
+        <td><img class="image" src="./Images/CaptainAmerica1.jpg"></td>
     </tr>
     
 </table>
