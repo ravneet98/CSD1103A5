@@ -45,7 +45,7 @@
 
       
 
-       input{
+       .registration input{
         width: 100%;
         border: 1.5px solid black;
         border-radius: 5px;
@@ -66,6 +66,37 @@
         border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
 
+    }
+
+    section#task2{
+        margin: 25px 0;
+    }
+    .task2 input{
+        width: 30%;
+        margin: 6px 0;
+        border: 1.5px solid black;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    .task2 label{
+        float: left;
+        padding-right: 10px;
+        width: 14%;
+        padding: 3px;
+    }
+    .row{
+        padding: 5px;
+    }
+    .row_alternative{
+        background-color: #f2f2f2;
+    }
+    .task2 button{
+        background: #007BFF;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1.5px solid black;
+        cursor: pointer;
     }
     
     </style>
@@ -116,6 +147,43 @@
     
     </div>
 </section>
+
+<section id="task2" class="task2">
+    <div class="row">
+        <h2>Registration</h2>
+    </div>
+    <div class="row">
+        <label for="First Name">First Name:</label>
+        <input name="FirstName" type="text" placeholder="First Name">
+    </div>
+    <div class="row row_alternative">
+        <label for="LastName">Last Name:</label>
+        <input name="LastName" type="text" placeholder="Last Name">
+    </div>
+    <div class="row">
+        <label for="EmaiAddress">Email Address:</label>
+        <input name="EmailAddress" type="email" placeholder="abc@xyz.com">
+    </div>
+    <div class="row row_alternative">
+        <label for="PhoneNumber">Phone Number</label>
+        <input name="PhoneNumber" type="number" placeholder="999-999-9999">
+    </div>
+    <div class="row">
+        <label for="Password">Password</label>
+        <input name="PhoneNumber" type="password" placeholder="password">
+        <input name="ConfirmNumber" type="password" placeholder="Confirm Password">
+    </div>
+    <div class="row row_alternative">
+        <label for="DateOfBirth">Date Of Birth</label>
+        <input name="DateOfBirth" type="date" placeholder="yyyy-mm-dd">
+    </div>
+    <div class="row">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </div>
+</section>
+
+
 <div>&nbsp;</div>
     <section class="task3">
 <table style="width:100%">
